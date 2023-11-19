@@ -1,0 +1,21 @@
+<p>contador-de-palavritas works!</p>
+<div>
+    <textarea [(ngModel)]="text" placeholder="Digite o texto aqui"></textarea>
+    <button (click)="countWords()">Contar Palavras</button>
+    <p>Número de Palavras: {{ wordCount }}</p>
+  </div>
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Contador de Palavras
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-textarea [(ngModel)]="text" placeholder="Digite o texto aqui"></ion-textarea>
+    <ion-button (click)="countWords()">Contar Palavras</ion-button>
+    <p>Número de Palavras: {{ wordCount }}</p>
+  </ion-content>
+  
